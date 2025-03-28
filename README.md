@@ -2,9 +2,9 @@
 
 Submitted by: **Selena Ho**
 
-This web app: **makes calls to thecatapi to display images of cats and breed details**
+This web app: **makes calls to thecatapi to display images of cats and details about the cat's breed**
 
-Time spent: **X** hours spent in total
+Time spent: **4.5** hours spent in total
 
 ## Required Features
 
@@ -15,8 +15,8 @@ The following **required** functionality is completed:
 - [X] **API calls appear random to the user**
 - [X] **At least one image is displayed per API call**
 - [X] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
-  - [ ] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
-- [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+  - [X] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
+- [X] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
 
@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/selenaho/web102proj4/blob/main/proj4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif  
@@ -39,6 +39,7 @@ GIF created with ScreenToGif
 ## Notes
 
 Describe any challenges encountered while building the app.
+- Figuring out the ban list and how to implement it
 
 ## License
 

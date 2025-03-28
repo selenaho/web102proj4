@@ -53,41 +53,44 @@ function App() {
     }
 
     return (
-        <>
-            <h1>Cats!</h1>
-            <p>made using thecatapi</p>
-            <h3>Currently Banned:</h3>
-            {banList.map((ban) => (
-                <button type='submit' onClick={() => updateBanList(ban)}>{ban}</button>
-            ))}
-            <br></br>
-            {currentImage ? (
-                <img
-                src={currentImage}
-                alt="Image returned"
-                />
-            ) : (
-                <div> </div>
-            )}
-            <br></br>
-            {currentName ? (
-                <button type='submit' onClick={()=> updateBanList(currentName)}>{currentName}</button>
-            ) : (
-                <div> </div>
-            )}
-            <br></br>
-            {currentTemperament ? (
-                <h5>{currentTemperament}</h5>
-            ) : (
-                <div> </div>
-            )}
-            {currentDescription ? (
-                <p>{currentDescription}</p>
-            ) : (
-                <div> </div>
-            )}
-            <button type='submit' onClick={makeQuery}>Next</button>
-        </>
+        <div className='container'>
+            <div className='main'>
+                <h1>Cats!</h1>
+                <p>made using thecatapi</p>
+                {currentImage ? (
+                    <img
+                    src={currentImage}
+                    alt="Image returned"
+                    />
+                ) : (
+                    <div> </div>
+                )}
+                <br></br>
+                {currentName ? (
+                    <button type='submit' onClick={()=> updateBanList(currentName)}>{currentName}</button>
+                ) : (
+                    <div> </div>
+                )}
+                <br></br>
+                {currentTemperament ? (
+                    <h5>{currentTemperament}</h5>
+                ) : (
+                    <div> </div>
+                )}
+                {currentDescription ? (
+                    <p>{currentDescription}</p>
+                ) : (
+                    <div> </div>
+                )}
+                <button type='submit' onClick={makeQuery}>Next</button>
+            </div>
+            <div className='side'>
+                <h3>Currently Banned:</h3>
+                {banList.map((ban) => (
+                    <button type='submit' onClick={() => updateBanList(ban)}>{ban}</button>
+                ))}
+            </div>
+        </div>
     )
 }
 
